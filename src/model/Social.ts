@@ -59,3 +59,5 @@ export const DISCORD: SocialModel = {
   handler: '@gryfder',
   href: 'https://discordapp.com/users/530395478819602482',
 };
+
+export const SOCIALS: SocialModel[] = [YOUTUBE, TELEGRAM, TWITTER, BLUESKY, DISCORD, INSTAGRAM];
