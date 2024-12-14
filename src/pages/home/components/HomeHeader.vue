@@ -6,6 +6,7 @@ import UNITED_KINGDOM_FLAG from '@/assets/icon/flag/united-kingdom.svg';
 import { FULL_NAME } from '@/model/Fursona';
 import { useElementBounding } from '@vueuse/core';
 import { computed, ref } from 'vue';
+import CountryLabel from './CountryLabel.vue';
 
 const selfRef = ref();
 const { width } = useElementBounding(selfRef);
@@ -25,16 +26,10 @@ const isThin = computed(() => width.value < 500);
 
       <div class="home-header-labels">
         <div>
-          <span>
-            <img class="home-header-flag" :src="SINGAPORE_FLAG" />
-            Singapore
-          </span>
-
-          <span>
-            <img class="home-header-flag" :src="MALAYSIA_FLAG" />
-            Malaysia
-          </span>
+          <CountryLabel :icon="SINGAPORE_FLAG" title="Singapore" />
+          <CountryLabel :icon="MALAYSIA_FLAG" title="Malaysia" />
         </div>
+
         <div>
           <span>
             中文
@@ -43,6 +38,7 @@ const isThin = computed(() => width.value < 500);
             <img class="home-header-flag" :src="UNITED_KINGDOM_FLAG" />
           </span>
         </div>
+
         <div>
           <span>Disciple † ★</span>
         </div>
@@ -66,6 +62,7 @@ const isThin = computed(() => width.value < 500);
     border-radius: 1.5em;
 
     box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.25);
+    object-fit: cover;
   }
   .home-header-body {
     gap: 1rem;
@@ -74,6 +71,7 @@ const isThin = computed(() => width.value < 500);
 
     .home-header-title {
       min-height: 4rem;
+      line-height: 1.2;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -89,7 +87,7 @@ const isThin = computed(() => width.value < 500);
       flex-direction: column;
 
       & > div {
-        gap: 0.2em 2em;
+        gap: 0.2em;
 
         display: flex;
         align-items: center;
@@ -104,6 +102,8 @@ const isThin = computed(() => width.value < 500);
   }
 
   &[data-thin='true'] {
+    padding-top: 1rem;
+
     flex-direction: column;
     align-items: center;
     text-align: center;

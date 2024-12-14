@@ -12,8 +12,8 @@ withDefaults(defineProps<{ item: SocialModel }>(), {});
 
 <style lang="scss" scoped>
 .card-social-v2 {
-  width: 3rem;
-  height: 3rem;
+  width: 3.2rem;
+  height: 3.2rem;
 
   display: grid;
   place-items: center;
@@ -23,7 +23,7 @@ withDefaults(defineProps<{ item: SocialModel }>(), {});
   border-radius: 50%;
   aspect-ratio: 1/1;
   transition: all 200ms ease;
-  background-color: hsla(0, 0%, 100%, 0.8);
+  background-color: hsla(207, 56%, 85%, 0.8);
 
   & > img {
     width: 50%;
@@ -33,7 +33,8 @@ withDefaults(defineProps<{ item: SocialModel }>(), {});
   }
 
   &:hover {
-    background-color: hsla(0, 0%, 100%, 0.4);
+    background-color: white;
+    transform: scale(1.1);
   }
 }
 </style>

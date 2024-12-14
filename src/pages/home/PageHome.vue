@@ -2,11 +2,29 @@
 import HomeHeader from './components/HomeHeader.vue';
 import SectionSocialV2 from './section/SectionSocial-v2.vue';
 import SectionGallery from './section/SectionGallery.vue';
+import { useElementSize } from '@vueuse/core';
+import { computed, ref } from 'vue';
+
+const selfRef = ref<HTMLDivElement>();
+const { width } = useElementSize(selfRef);
+
+const paddingTopMin = computed(() => 16);
+const paddingTopMax = computed(() => 64);
+const paddingTop = computed(() => {
+  const distance = Math.max(width.value - 810, 0);
+
+  return Math.min(
+    paddingTopMin.value + (distance / 100) * paddingTopMin.value,
+    paddingTopMax.value,
+  );
+});
+
+const isWide = computed(() => width.value > 810);
 </script>
 
 <template>
-  <div class="page-home">
-    <div class="page-home-body" style="z-index: 1">
+  <div ref="selfRef" class="page-home" :data-wide="isWide">
+    <div class="page-home-body" :style="{ zIndex: '1', paddingTop: `${paddingTop}px` }">
       <HomeHeader />
       <SectionSocialV2 />
       <SectionGallery />
