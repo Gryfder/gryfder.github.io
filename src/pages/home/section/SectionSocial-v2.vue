@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
-import { SOCIALS } from '@/model/Social';
-import CardSocialV2 from '../components/CardSocial-v2.vue';
 import { useElementBounding } from '@vueuse/core';
+import { computed, ref } from 'vue';
+
+import { SOCIALS } from '@/model/Social';
+
+import CardSocialV2 from '../components/CardSocial-v2.vue';
 
 const selfRef = ref();
 const { width } = useElementBounding(selfRef);

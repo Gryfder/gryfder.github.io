@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import SINGAPORE_FLAG from '@/assets/icon/flag/singapore.svg';
+import { useElementBounding } from '@vueuse/core';
+import { computed, ref } from 'vue';
+
 import MALAYSIA_FLAG from '@/assets/icon/flag/malaysia.svg';
+import SINGAPORE_FLAG from '@/assets/icon/flag/singapore.svg';
 import TAIWAN_FLAG from '@/assets/icon/flag/taiwan.svg';
 import UNITED_KINGDOM_FLAG from '@/assets/icon/flag/united-kingdom.svg';
 import { FULL_NAME } from '@/model/Fursona';
-import { useElementBounding } from '@vueuse/core';
-import { computed, ref } from 'vue';
+
 import CountryLabel from './CountryLabel.vue';
 
 const selfRef = ref();

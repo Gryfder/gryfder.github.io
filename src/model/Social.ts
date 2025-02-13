@@ -1,13 +1,12 @@
-import YOUTUBE_ICON from '@/assets/icon/social/youtube-color.svg';
-import TELEGRAM_ICON from '@/assets/icon/social/telegram-color.svg';
-import TWITTER_ICON from '@/assets/icon/social/twitter-color.svg';
+import BLUESKY_ICON from '@/assets/icon/social/bluesky-color.svg';
 import DISCORD_ICON from '@/assets/icon/social/discord-color.svg';
 import INSTAGRAM_ICON from '@/assets/icon/social/instagram-color.png';
-import BLUESKY_ICON from '@/assets/icon/social/bluesky-color.svg';
-
-import PFP_1_IMAGE from '@/assets/img/pfp.webp';
+import TELEGRAM_ICON from '@/assets/icon/social/telegram-color.svg';
+import TWITTER_ICON from '@/assets/icon/social/twitter-color.svg';
+import YOUTUBE_ICON from '@/assets/icon/social/youtube-color.svg';
 import PFP_2_IMAGE from '@/assets/img/pfp-2.webp';
 import PFP_3_IMAGE from '@/assets/img/pfp-3.jpg';
+import PFP_1_IMAGE from '@/assets/img/pfp.webp';
 
 export interface SocialModel {
   icon: string;

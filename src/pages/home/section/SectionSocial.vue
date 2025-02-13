@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import CardSocial from '../components/CardSocial.vue';
 import { SOCIALS } from '@/model/Social';
+
+import CardSocial from '../components/CardSocial.vue';
 import SectionTitle from '../components/SectionTitle.vue';
 </script>
 

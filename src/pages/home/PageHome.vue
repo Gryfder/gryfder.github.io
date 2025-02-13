@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import HomeHeader from './components/HomeHeader.vue';
-import SectionSocialV2 from './section/SectionSocial-v2.vue';
-import SectionGallery from './section/SectionGallery.vue';
 import { useElementSize } from '@vueuse/core';
 import { computed, ref } from 'vue';
+
+import HomeHeader from './components/HomeHeader.vue';
+import SectionGallery from './section/SectionGallery.vue';
+import SectionSocialV2 from './section/SectionSocial-v2.vue';
 
 const selfRef = ref<HTMLDivElement>();
 const { width } = useElementSize(selfRef);
