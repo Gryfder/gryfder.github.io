@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SOCIALS } from '@/model/Social';
+import { SOCIALS } from '@/model/Social.model';
 
 import CardSocial from '../components/CardSocial.vue';
 import SectionTitle from '../components/SectionTitle.vue';

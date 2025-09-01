@@ -2,7 +2,7 @@
 import { useElementBounding } from '@vueuse/core';
 import { computed, ref } from 'vue';
 
-import { GALLERIES } from '@/model/Gallery';
+import { GALLERIES } from '@/model/Gallery.model';
 
 import SectionTitle from '../components/SectionTitle.vue';
 

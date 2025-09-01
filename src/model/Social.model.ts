@@ -9,11 +9,11 @@ import PFP_3_IMAGE from '@/assets/img/pfp-3.jpg';
 import PFP_1_IMAGE from '@/assets/img/pfp.webp';
 
 export interface SocialModel {
-  icon: string;
-  title: string;
-  thumbnail: string;
-  handler: string;
-  href: string;
+  readonly icon: string;
+  readonly title: string;
+  readonly thumbnail: string;
+  readonly handler: string;
+  readonly href: string;
 }
 
 export const YOUTUBE: SocialModel = {

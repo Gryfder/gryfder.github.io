@@ -2,7 +2,7 @@
 import { useElementBounding } from '@vueuse/core';
 import { computed, ref } from 'vue';
 
-import { SOCIALS } from '@/model/Social';
+import { SOCIALS } from '@/model/Social.model';
 
 import CardSocialV2 from '../components/CardSocial-v2.vue';
 

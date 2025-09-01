@@ -2,15 +2,15 @@ import type { Component } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 export interface NavigationModel {
-  id: string;
-  path: string;
-  component: () => Component;
+  readonly id: string;
+  readonly path: string;
+  readonly component: () => Component;
 }
 
 export const HOME: NavigationModel = {
   id: 'home',
   path: '/',
-  component: () => import('@/pages/home/PageHome.vue'),
+  component: () => import('@/pages/home/Home.page.vue'),
 };
 
 export const router = createRouter({

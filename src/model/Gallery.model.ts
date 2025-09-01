@@ -13,11 +13,11 @@ import GALLERY_13 from '@/assets/gallery/gallery-13.png';
 import GALLERY_14 from '@/assets/gallery/gallery-14.png';
 import GALLERY_15 from '@/assets/gallery/gallery-15.gif';
 
-export interface Gallery {
-  src: string;
+export interface GalleryModel {
+  readonly src: string;
 }
 
-export const GALLERIES: Gallery[] = [
+export const GALLERIES: GalleryModel[] = [
   { src: GALLERY_1 },
   { src: GALLERY_2 },
   { src: GALLERY_3 },

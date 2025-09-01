@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { SocialModel } from '@/model/Social';
+import type { SocialModel } from '@/model/Social.model';
 
 withDefaults(defineProps<{ item: SocialModel }>(), {});
 </script>
