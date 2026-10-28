@@ -16,6 +16,8 @@ export interface SocialModel {
   readonly href: string;
 }
 
+// TODO: add xiaohongshu, barq, fb, furaffinity
+
 export const YOUTUBE: SocialModel = {
   icon: YOUTUBE_ICON,
   thumbnail: PFP_2_IMAGE,
