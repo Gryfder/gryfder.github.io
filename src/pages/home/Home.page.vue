@@ -6,9 +6,9 @@ import MALAYSIA_FLAG from '@/assets/icon/flag/malaysia.svg';
 import SINGAPORE_FLAG from '@/assets/icon/flag/singapore.svg';
 import TAIWAN_FLAG from '@/assets/icon/flag/taiwan.svg';
 import UNITED_KINGDOM_FLAG from '@/assets/icon/flag/united-kingdom.svg';
-import { FULL_NAME } from '@/model/Fursona.model.js';
-import { GALLERIES } from '@/model/Gallery.model.js';
-import { SOCIALS } from '@/model/Social.model.js';
+import { FULL_NAME } from '@/model/fursona.model.js';
+import { GALLERIES } from '@/model/gallery.model.js';
+import { SOCIALS } from '@/model/social.model.js';
 
 import CardSocialV2 from './components/CardSocial-v2.vue';
 import CountryLabel from './components/CountryLabel.vue';
