@@ -1,6 +1,8 @@
 import type { Component } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
+import { FEATURE_HOME_V2 } from './feature-flag';
+
 export interface NavigationModel {
   readonly id: string;
   readonly path: string;
@@ -10,7 +12,10 @@ export interface NavigationModel {
 export const HOME: NavigationModel = {
   id: 'home',
   path: '/',
-  component: () => import('@/pages/home-v2/Home-v2.page.vue'),
+  component: () =>
+    FEATURE_HOME_V2
+      ? import('@/pages/home-v2/Home-v2.page.vue')
+      : import('@/pages/home/Home.page.vue'),
 };
 
 export const router = createRouter({
