@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "cross-env VITE_APP=dev vite",
+    "dev": "cross-env VITE_APP_ENV=dev vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
@@ -12,6 +12,9 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "dependencies": {
     "@vueuse/core": "^11.1.0",
